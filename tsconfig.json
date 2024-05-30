@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+
+    // Strict Checks
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "noUncheckedIndexedAccess": true,
+
+    // Linter Checks
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+
+    // Base Strict Checks
+    "noImplicitUseStrict": false,
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noStrictGenericChecks": false
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
