@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { Transform } from 'class-transformer';
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 import { VALIDATE_MESSAGES } from 'src/constant';
 
@@ -23,6 +24,7 @@ export class CreateRequestDto {
     example: '1',
     description: 'Идентификатор типа обращения',
   })
+  @Transform(({ value }) => +value)
   @IsNumber({}, { message: VALIDATE_MESSAGES.isNumber })
   @IsNotEmpty({ message: VALIDATE_MESSAGES.isNotEmpty })
   readonly typeId: number;

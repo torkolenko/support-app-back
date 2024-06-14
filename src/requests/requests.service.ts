@@ -54,6 +54,7 @@ export class RequestsService {
         },
         limit,
         offset,
+        order: ['id'],
         include: [{ model: Status }, { model: Type }],
       });
 
@@ -66,6 +67,7 @@ export class RequestsService {
       },
       limit,
       offset,
+      order: ['id'],
       include: [{ model: Status }, { model: Type }],
     });
 
